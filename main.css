@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .slot {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .placeholder {
+    /* aqui atribui o bgimage com o paint criado no worklet */
+    background-image: paint(placeholder-box-props);
+  
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    max-height: 100vh;
+    overflow: auto;
+    resize: both;
+  }
+  
+  .slot:nth-child(1) .placeholder {
+    border: 2px solid #fd7e14;
+  }
+  
+  .slot:nth-child(2) .placeholder {
+    border: 6px solid #228be6;
+  }
+  
+  .slot:nth-child(3) .placeholder {
+    border: 1rem solid #e64980;
+  }
+  
+  .warning {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 20px;
+    border-top: 4px dashed #e8590c;
+    background-color: #ffe8cc;
+    color: #e8590c;
+    text-align: center;
+  }

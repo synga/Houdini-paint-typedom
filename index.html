@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Houdini Paint testando</title>
+    <!-- Registra o script do paint -->
+    <script>
+        CSS.paintWorklet.addModule('worklet.js');
+    </script>
+    <!-- linka o css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slot">
+            <div class="placeholder"></div>
+        </div>
+        <div class="slot">
+            <div class="placeholder"></div>
+        </div>
+        <div class="slot">
+            <div class="placeholder"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
